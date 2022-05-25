@@ -42,8 +42,8 @@ public class AutoAppConfig {
     // Overriding bean definition for bean 'memoryMemberRepository' with a different definition: replacing [Generic bean: class [com.example.core.member.MemoryMemberRepository];
     // 하지만 이런 상황이 발생되면 여러 설정이 꼬여서 잡기 어려운 버그가 만들어진다.
     // 그래서 최근 스프링부트에서는 수동 빈 등록과 자동 빈 등록이 충돌나면 오류가 발생하도록 기본값을 바꾸었다.
-    @Bean(name ="memoryMemberRepository")//수동등록
-    MemberRepository memberRepository() {
-        return new MemoryMemberRepository();
-    }
+//    @Bean(name ="memoryMemberRepository")//수동등록
+//    MemberRepository memberRepository() {
+//        return new MemoryMemberRepository();
+//    }
 }
